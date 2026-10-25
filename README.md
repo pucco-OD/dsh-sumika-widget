@@ -1,5 +1,7 @@
 # Sumika — a desktop character for DeepSeek Harness
 
+![Sumika standing on the desktop next to a question card from the harness](docs/preview.png)
+
 `Sumika` is a desktop widget for the Windows version of DeepSeek Harness. It stays on top of the
 desktop and switches its animation with the agent's state. Its main highlight is that the real
 questions and approvals from the harness are shown on a small pixel-art card, where you can answer
@@ -22,6 +24,23 @@ to Codex's.
   integer number. / 设置页可拖动滑块，也可直接键入整数。
 - **Bringing the harness back** — double-click the character to bring the DeepSeek Harness window to
   the front. / 双击角色可以把 DeepSeek Harness 窗口调到最前。
+
+## States / 状态
+
+![Idle, working, waiting and completed](docs/states.png)
+
+The character never sits still: it browses the shelf while idle, types at the desk while the agent is
+running, holds a cup and raises a “?” while a question is waiting, and stands up with a “!” when the
+turn is finished. The four animations swap on their own entrance and exit clips, so a state change
+looks like one continuous piece of acting rather than a jump cut. / 角色会跟随智能体切换状态：闲置时在书架前翻书，工作时坐到桌前打字，有提问时端着杯子举出问号，本轮结束时起身并弹出感叹号。四段动画各自带有出场与消散过渡，衔接起来像一段连贯的表演，而不是硬切。
+
+## The question card / 提问卡片
+
+![The question card with three options, a reply field and a link back to the harness](docs/question-card.png)
+
+The card reuses the harness's own question payload: options keep their numbering, a long label scrolls
+inside its row once selected, the text field accepts a free-form answer, and “去 DSH 查看” brings the
+harness window to the front with the same question still open. / 卡片直接复用智能体传来的提问内容：选项保留原有编号，长文本在选中后会在选项内滚动，输入框可以填写自由回答，点击“去 DSH 查看”会把 DeepSeek Harness 窗口调到前台，并保留同一道提问。
 
 ## Character / 角色来源
 
@@ -84,6 +103,7 @@ This produces `CodexPet.exe` and copies it to `runtime/Sumika.exe` (the file the
 | `client.js` | settings page (web client half) |
 | `src/`, `ui/` | the WPF desktop window and its XAML |
 | `runtime/` | the compiled widget, its DLLs and the artwork |
+| `docs/` | the preview images used by this README |
 
 ## Credits / 第三方
 
