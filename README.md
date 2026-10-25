@@ -55,6 +55,9 @@ dsh plugin add https://github.com/pucco-OD/dsh-sumika-widget
 
 Then restart the harness and open **Settings → Sumika**.
 
+To uninstall, remove the plugin from **Settings → Plugins**; the widget window closes with it. The
+settings and logs in `%LOCALAPPDATA%\Sumika` are left behind and can be deleted by hand.
+
 The plugin writes its settings, logs and decoded-asset cache to `%LOCALAPPDATA%\Sumika`.
 Nothing is sent anywhere: the widget talks to the harness over a loopback HTTP endpoint with a
 random per-run bearer token.
