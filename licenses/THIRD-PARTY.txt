@@ -1,0 +1,5 @@
+WebP native decoder: libwebp 1.6.0 (BSD-style license; see included LICENSE and PATENTS).
+Prebuilt Windows x64 libraries: https://github.com/imazen/libwebp-net/releases/tag/native-v1.6.0
+Archive SHA-256: 64c97af902a4fedc2eb9960d1a5f0fc77879d94891403876b3c7eea7fcdb8a3b
+Only decoding libraries are distributed.
+Microsoft Visual C++ 2015-2022 Redistributable runtime: vcruntime140.dll, deployed app-local alongside Sumika.exe (see Microsoft's Visual Studio redistributable license terms).

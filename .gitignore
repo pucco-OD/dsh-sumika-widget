@@ -1,0 +1,10 @@
+# build output (the committed runtime/Sumika.exe is the release binary)
+/CodexPet.exe
+/tests/*.exe
+/tests/*.log
+
+# PowerShell / OS noise
+*.tmp
+*.user
+Thumbs.db
+desktop.ini
